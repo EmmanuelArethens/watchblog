@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/composer" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/doctrine/collections" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+</project>
