@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -19,6 +19,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ path('new_article') }}">New Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('stream_page') }}">Streaming</a>
                 </li>
             </ul>
         </div>

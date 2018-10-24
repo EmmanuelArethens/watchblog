@@ -1,9 +1,29 @@
 {% extends "base.html.twig" %}
 
+{%  form_theme articleForm 'bootstrap_4_layout.html.twig' %}
+
 {% block body %}
 
-    <h1>New Article</h1>
+    <h1>
+    {% if modify %}
+        Modify article
+    {% else %}
+        Create Article
+    {% endif %}
+    </h1>
 
-    {{ form(articleForm) }}
+    {{ form_start(articleForm) }}
+    {{ form_row(articleForm.title, {'attr': {'placeholder': "Titre de l'article"}}) }}
+    {{ form_row(articleForm.content, {'attr': {'placeholder': "Contenu de l'article"}}) }}
+    {{ form_row(articleForm.image, {'attr': {'placeholder': "URL de l'image"}}) }}
+
+    <button type="submit" class="btn btn-success">
+        {% if modify %}
+        Modify
+        {% else %}
+        Create Article
+        {% endif %}
+    </button>
+    {{ form_end(articleForm) }}
 
 {% endblock %}
