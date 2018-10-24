@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8062571-4b2f-4145-b0f2-c32693fa3a3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/website-skeleton/templates/blog/stream.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/templates/blog/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/templates/blog/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,15 +47,19 @@
       <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="article.html.twig" pinned="false" current-in-tab="false">
@@ -94,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website-skeleton/src/Controller/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
+            <state relative-caret-position="78">
               <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
               <folding>
                 <element signature="e#34#80#0#PHP" expanded="true" />
@@ -128,9 +126,10 @@
         <option value="$PROJECT_DIR$/website-skeleton/templates/blog/homepage.html.twig" />
         <option value="$PROJECT_DIR$/website-skeleton/templates/blog/stream.html.twig" />
         <option value="$PROJECT_DIR$/website-skeleton/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig" />
         <option value="$PROJECT_DIR$/website-skeleton/src/Entity/Article.php" />
         <option value="$PROJECT_DIR$/website-skeleton/src/Controller/BlogController.php" />
+        <option value="$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig" />
+        <option value="$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig" />
       </list>
     </option>
   </component>
@@ -245,10 +244,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1448" />
+    <option name="x" value="54" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -338,18 +337,18 @@
       <workItem from="1540211265352" duration="5334000" />
       <workItem from="1540283416122" duration="5382000" />
       <workItem from="1540367938452" duration="6261000" />
-      <workItem from="1540383098155" duration="3882000" />
+      <workItem from="1540383098155" duration="5780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20859000" />
+    <option name="totallyTimeSpent" value="22757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1448" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.247851" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746032" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -600,30 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/homepage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/article.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -643,11 +618,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website-skeleton/src/Controller/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
+        <state relative-caret-position="78">
           <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
           <folding>
             <element signature="e#34#80#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/homepage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-skeleton/templates/blog/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
         </state>
       </provider>
     </entry>

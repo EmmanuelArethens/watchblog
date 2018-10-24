@@ -10,7 +10,7 @@
         <div class ="metadata">{{ article.createdAt | date('d/m/Y')}} à {{ article.createdAt | date('H:i') }} </div>
         <div class ="content">
             <img src="{{ article.image }}">
-            <p> {{ article.content }}</p>
+            {# <p> {{ article.content }}</p> #}
             <a href="{{ path('show_article', {'id': article.id}) }}" class="btn btn-primary">voir l'article</a>
         </div>
     </article>
