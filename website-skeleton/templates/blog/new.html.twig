@@ -1,6 +1,15 @@
 {% extends "base.html.twig" %}
-
 {%  form_theme articleForm 'bootstrap_4_layout.html.twig' %}
+
+{% block javascript %}
+<script src="{{ asset('asset/js/ckeditor/adapters/jquery.js') }}" type="text/javascript"></script>
+<script src="{{ asset('asset/js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $('textarea.ckeditor').ckeditor();
+    });
+</script>
+{% endblock %}
 
 {% block body %}
 
@@ -14,7 +23,7 @@
 
     {{ form_start(articleForm) }}
     {{ form_row(articleForm.title, {'attr': {'placeholder': "Titre de l'article"}}) }}
-    {{ form_row(articleForm.content, {'attr': {'placeholder': "Contenu de l'article"}}) }}
+    {{ form_row(articleForm.content) | raw }}
     {{ form_row(articleForm.image, {'attr': {'placeholder': "URL de l'image"}}) }}
 
     <button type="submit" class="btn btn-success">

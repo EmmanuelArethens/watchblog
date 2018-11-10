@@ -1,0 +1,5 @@
+{
+    "require": {
+        "egeloen/ckeditor-bundle": "^6.0"
+    }
+}

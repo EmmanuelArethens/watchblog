@@ -62,7 +62,7 @@ class BlogController extends AbstractController
 
         $form = $this ->createFormBuilder($article)
             ->add('title', TextType::class)
-            ->add('content', TextareaType::class)
+            ->add('content', TextareaType::class, array('attr' => array('class' => 'ckeditor')))
             ->add('image')
             ->getForm();
 

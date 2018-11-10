@@ -96,6 +96,7 @@
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/symfony/web-link" />
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/symfony/web-profiler-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/symfony/web-server-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/symfony/webpack-encore-pack" />
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/website-skeleton/vendor/webmozart/assert" />

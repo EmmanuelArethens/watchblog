@@ -99,6 +99,7 @@
       <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/cache" />
       <path value="$PROJECT_DIR$/website-skeleton/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/website-skeleton/vendor/symfony/webpack-encore-pack" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
