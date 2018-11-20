@@ -23,6 +23,16 @@
                  <li class="nav-item">
                     <a class="nav-link" href="{{ path('stream_page') }}">Streaming</a>
                 </li>
+
+                {% if not app.user %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('security_login') }}">Login</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('security_logout') }}">Logout</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </nav>

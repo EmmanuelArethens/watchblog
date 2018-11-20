@@ -20,6 +20,7 @@ class BlogController extends AbstractController
      */
     public function index()
     {
+        /* récupere les articles dans la variable $articles */
         $repo = $this->getDoctrine()->getRepository(Article::class);
 
         $articles = $repo->findAll();
@@ -43,6 +44,7 @@ class BlogController extends AbstractController
     /**
      * @Route("/streaming", name="stream_page")
      */
+    
     public function stream_page()
     {
         return $this->render('blog/stream.html.twig', [
@@ -56,7 +58,7 @@ class BlogController extends AbstractController
      */
 
     public function articleForm(Article $article = null, Request $request, ObjectManager $manager)
-    {
+    { /*Création du formulaire pour ajouter un article en bdd et le faire persister*/
         if(!$article) {
             $article = new Article();
         }
@@ -90,6 +92,7 @@ class BlogController extends AbstractController
     /**
      * @Route("/blog/{id}", name="show_article")
      */
+    /*voir un article en fonction de son ID*/
     public function showArticle($id)
     {   $repo = $this->getDoctrine()->getRepository(Article::class);
 
