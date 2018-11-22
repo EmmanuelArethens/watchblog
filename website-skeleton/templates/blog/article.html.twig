@@ -9,5 +9,32 @@
         <p>
            {{ article.content }}
         </p>
+
+        <section id="Comments">
+            {% if app.user %}
+            <div>
+                {{ form_start(commentForm) }}
+                {{ form_row(commentForm.author, {'attr':{'placeholder': "Your Name"}})}}
+                {{ form_row(commentForm.content, {'attr':{'placeholder': "Your Comment"}})}}
+                <button type="submit" class="btn btn-success">Comment !</button>
+                {{ form_end(commentForm) }}
+            </div>
+            {% else %}
+            <h2>You must be connected to comment this article</h2>
+            {% endif %}
+            <h1>{{ article.comments | length }} Comments</h1>
+            {% for comment in article.comments %}
+                <div class ="comment">
+                    <div class="row">
+                        <div class="row">
+                            {{ comment.author }} (<small>{{ comment.CreatedAt | date('d/m/y') }}</small>)
+                        </div>
+                        <div class="col-sm-9">
+                            {{ comment.content | raw }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
     </div>
 {% endblock %}

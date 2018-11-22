@@ -6,6 +6,8 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Article;
+use App\Entity\Comment;
+use App\Form\CommentType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -93,14 +95,28 @@ class BlogController extends AbstractController
      * @Route("/blog/{id}", name="show_article")
      */
     /*voir un article en fonction de son ID*/
-    public function showArticle($id)
+    public function showArticle($id, Request $request, ObjectManager $manager)
     {   $repo = $this->getDoctrine()->getRepository(Article::class);
 
         $article = $repo->find($id);
+        $comment = new Comment();
+
+        $form = $this->createForm(CommentType::class, $comment);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            $comment->setCreatedAt(new \DateTime());
+            $comment->setArticle($article);
+            $manager->persist($comment);
+            $manager->flush();
+
+            return $this->redirectToRoute('show_article', ['id' => $article->getId()]);
+        }
 
         return $this->render('blog/article.html.twig', [
             'controller_name' => 'BlogController',
             'article' => $article,
+            'commentForm' => $form->createView()
         ]);
     }
 }
