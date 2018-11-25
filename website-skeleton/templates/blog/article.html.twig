@@ -26,7 +26,7 @@
             {% for comment in article.comments %}
                 <div class ="comment">
                     <div class="row">
-                        <div class="row">
+                        <div class="row col-sm-3">
                             {{ comment.author }} (<small>{{ comment.CreatedAt | date('d/m/y') }}</small>)
                         </div>
                         <div class="col-sm-9">
@@ -34,6 +34,7 @@
                         </div>
                     </div>
                 </div>
+                <br/>
             {% endfor %}
         </section>
     </div>

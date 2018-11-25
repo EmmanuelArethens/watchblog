@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+        <link rel="manifest" href="{{ asset('build/manifest.json') }}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -42,6 +43,17 @@
         {% block body %}{% endblock %}
         </div>
         {% block javascripts %}
+            <script>
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('{{ asset('build/service-worker.js') }}')
+                        .then(function (registration) {
+                            console.log('Registration successful, scope is:', registration.scope);
+                        })
+                        .catch(function (error) {
+                            console.log('Service worker registration failed, error:', error);
+                        });
+                }
+            </script>
         {% endblock %}
     </body>
 </html>
