@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Admin Register</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.username, {'label' : 'Username', 'attr' : {'placeholder' : 'Username'}}) }}
+    {{ form_row(form.password, {'label' : 'Password', 'attr' : {'placeholder' : 'password'}}) }}
+    <button type="submit" class="btn btn-success">Register</button>
+    {{ form_end(form) }}
+{% endblock %}

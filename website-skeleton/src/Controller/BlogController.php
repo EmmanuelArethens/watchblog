@@ -38,8 +38,13 @@ class BlogController extends AbstractController
      */
     public function homepage()
     {
+        $repo = $this->getDoctrine()->getRepository(Article::class);
+
+        $article = $repo->findOneBy(array('id' =>"1"));
+
         return $this->render('blog/homepage.html.twig', [
             'controller_name' => 'BlogController',
+            'article' => $article,
         ]);
     }
 

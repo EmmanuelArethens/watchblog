@@ -1,4 +1,21 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
+    <div class ="container row">
+        <div class="col-md-3">
+            <img src="{{ asset('build/images/logo2.png') }}">
+            <H3> Bienvenue sur mon blog</H3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio nesciunt quo tempore tenetur. Aliquam aperiam earum harum hic ipsa iusto minus nemo quae quos sapiente. Obcaecati tenetur veritatis voluptates!</p>
+        </div>
+        <div class="col-md-9">
+            <article>
+                <h2>{{ article.title }}</h2>
+                <div class ="metadata">{{ article.createdAt | date('d/m/Y')}} à {{ article.createdAt | date('H:i') }} </div>
+                <div class ="content">
+                    <img src="{{ article.image }}">
+                    <a href="{{ path('show_article', {'id': article.id}) }}" class="btn btn-primary">voir l'article</a>
+                </div>
+            </article>
+        </div>
+    </div>
 {% endblock %}
